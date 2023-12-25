@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/infor/CS/Code/XV6-Project",
-      "program": "/home/infor/CS/Code/XV6-Project/build/Debug/outDebug",
+      "cwd": "/home/infor/CS/Code/NDHU_Operating_system_engineering_2023",
+      "program": "/home/infor/CS/Code/NDHU_Operating_system_engineering_2023/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
