@@ -24,7 +24,7 @@
 Clone the repository to your local machine by running
 
 ```shell!
-https://github.com/appleiphonedddd/NDHU_Operating_system_engineering_2023.git
+git clone https://github.com/appleiphonedddd/NDHU_Operating_system_engineering_2023.git
 cd NDHU_Operating_system_engineering_2023
 ```
 Install QEMU
