@@ -177,7 +177,7 @@ filetree
 
 ### Deployment
 
-Go back to repository then compile Makefile
+Compile Makefile then you can input linux command line in terminal
 
 ```sh
 make qemu-nox
