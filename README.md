@@ -4,12 +4,12 @@
 
 ## Contents
 
-- [Getting_Started](#GettingStarted)
+- [Getting Started](#Getting-Started)
   - [Requirements](#Requirements)
   - [Installation](#Installation)
-- [Directory_Structure](#Directory_Structure)
+- [Directory Structure](#Directory-Structure)
 - [Deployment](#Deployment)
-- [Frameworks_Used](#Frameworks_Used)
+- [Frameworks Used](#Frameworks-Used)
 - [Author](#Author)
 
 
@@ -60,7 +60,7 @@ git clone https://github.com/appleiphonedddd/NDHU_Operating_system_engineering_2
 cd NDHU_Operating_system_engineering_2023
 ```
 
-### Directory_Structure
+### Directory Structure
 
 ```
 filetree 
@@ -183,7 +183,7 @@ Compile Makefile then you can input linux command line in terminal
 make qemu-nox
 ```
 
-### Frameworks_Used
+### Frameworks Used
 
 - [QEMU](https://www.qemu.org/)
 - [MIT XV6](https://github.com/mit-pdos/xv6-riscv)
