@@ -1,7 +1,6 @@
 # NDHU_Operating_system_engineering_2023
 
-
-`NDHU_Operating_system_engineering_2023` project belongs to the Digital Learning Technology at National Dong Hwa University. The purpose of this project is to help optimize the layout of stores within the mall. For instance, stores catering to families with children can be strategically placed in areas frequented by families
+`NDHU_Operating_system_engineering_2023` project belongs to the Operating system engineering at National Dong Hwa University. The purpose of this project is to compile source code then create a Linux Operating system in QEMU system emulator, finally you can input linux command line in terminal
 
 ## Contents
 
