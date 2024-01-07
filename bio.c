@@ -30,8 +30,10 @@ struct {
   struct spinlock lock;
   struct buf buf[NBUF];
 
-  // Linked list of all buffers, through prev/next.
-  // head.next is most recently used.
+  /**
+   * Linked list of all buffers, through prev/next.
+   * head.next is most recently used.
+   */
   struct buf head;
 } bcache;
 
@@ -42,7 +44,6 @@ binit(void)
 
   initlock(&bcache.lock, "bcache");
 
-//PAGEBREAK!
   // Create linked list of buffers
   bcache.head.prev = &bcache.head;
   bcache.head.next = &bcache.head;
@@ -54,10 +55,12 @@ binit(void)
     bcache.head.next = b;
   }
 }
-
-// Look through buffer cache for block on device dev.
-// If not found, allocate a buffer.
-// In either case, return locked buffer.
+/**
+ * Look through buffer cache for block on device dev.
+ * If not found, allocate a buffer.
+ * In either case, return locked buffer
+ */
+ 
 static struct buf*
 bget(uint dev, uint blockno)
 {
@@ -74,10 +77,12 @@ bget(uint dev, uint blockno)
       return b;
     }
   }
+  /**
+   * Not cached; recycle some non-busy and clean buffer.
+   * Even if refcnt==0, B_DIRTY indicates a buffer is in use
+   * because log.c has modified it but not yet committed it.
+   */
 
-  // Not cached; recycle an unused buffer.
-  // Even if refcnt==0, B_DIRTY indicates a buffer is in use
-  // because log.c has modified it but not yet committed it.
   for(b = bcache.head.prev; b != &bcache.head; b = b->prev){
     if(b->refcnt == 0 && (b->flags & B_DIRTY) == 0) {
       b->dev = dev;
@@ -114,9 +119,11 @@ bwrite(struct buf *b)
   b->flags |= B_DIRTY;
   iderw(b);
 }
+/**
+ * Release a locked buffer.
+ * Move to the head of the MRU list.
+*/
 
-// Release a locked buffer.
-// Move to the head of the MRU list.
 void
 brelse(struct buf *b)
 {
@@ -139,6 +146,3 @@ brelse(struct buf *b)
   
   release(&bcache.lock);
 }
-//PAGEBREAK!
-// Blank page.
-

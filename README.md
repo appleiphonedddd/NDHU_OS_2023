@@ -188,6 +188,9 @@ make qemu-nox
 - [QEMU](https://www.qemu.org/)
 - [MIT XV6](https://github.com/mit-pdos/xv6-riscv)
 - [MIT XV6 official](https://pdos.csail.mit.edu/6.828/2023/xv6.html)
+- [Multiprocessor Specification](https://github.com/x86-8/x86-8-docs/blob/master/SPEC/intel/24201606-Multiprocessor%20Specification.pdf)
+- [IOAPIC](https://web.archive.org/web/20161130153145/http://download.intel.com/design/chipsets/datashts/29056601.pdf)
+- [Other source code](https://github.com/kishanpatel22/xv6-kernel-threads/tree/master)
 
 ### Author
 

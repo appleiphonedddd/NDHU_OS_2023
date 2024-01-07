@@ -1,6 +1,7 @@
 // Multiprocessor support
 // Search memory for MP description structures.
-// http://developer.intel.com/design/pentium/datashts/24201606.pdf
+// https://blog.csdn.net/jiangwei0512/article/details/52964339
+// https://web.archive.org/web/20161130153145/http://download.intel.com/design/chipsets/datashts/29056601.pdf
 
 #include "types.h"
 #include "defs.h"
